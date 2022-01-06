@@ -50,7 +50,7 @@ table {
 @import url('https://fonts.googleapis.com/css2?family=Lexend+Deca&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Big+Shoulders+Display:wght@700&display=swap');
 
-html{
+html {
     background-color: hsl(0, 0%, 95%);
     min-height: 100%;
 }
@@ -72,8 +72,20 @@ body {
     display: flex;      
 }
 
-.cartao section{
-    padding: 50px;  
+
+.cartao img {
+    width: 64px;
+    height: 40px;
+}
+
+.cartao div {
+    margin-top: auto;
+}
+
+.cartao section {
+    padding: 50px;
+    display: flex;
+    flex-direction: column;
 }
 
 .sedans {
@@ -126,6 +138,7 @@ body {
     border: hsl(0, 0%, 95%) solid;
 }
 
+
 .header {
     color: hsl(0, 0%, 95%);
     margin: 30px 0 30px;
@@ -166,10 +179,9 @@ body {
     color: hsl(228, 45%, 44%); 
 }
 
-@media (max-width: 1024px){
+@media (max-width: 1024px) {
     .cartao {
-        width: 40%;
-        height: 90%;
+        width: 50%;
         flex-direction: column;
         display: block;
     }
@@ -183,10 +195,19 @@ body {
     }
 }
 
-@media (max-width: 600px){
+@media (max-width: 540px) {
     .cartao {
         width: 75%;
-        height: 80%;
-    }    
+    }
 }
 
+@media (max-width: 320px) {
+    
+    .cartao section {
+        align-items: center;
+    }
+    
+    .cartao section p {
+        text-align: center;
+    }
+}
