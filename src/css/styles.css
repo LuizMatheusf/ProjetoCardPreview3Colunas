@@ -67,9 +67,12 @@ body {
     align-items: stretch;
     justify-content: center;
     position: relative;
+    max-width: 1080px;
     width: 75%;
     height: 35%;
-    display: flex;      
+    display: flex;
+    border-radius: 12px;   
+    box-shadow: 0 5px 10px rgba(0, 0, 0, 0.5);      
 }
 
 
@@ -180,10 +183,12 @@ body {
 }
 
 @media (max-width: 1024px) {
+
     .cartao {
         width: 50%;
         flex-direction: column;
         display: block;
+        margin-top: 50px;
     }
     
     .sedans{
@@ -193,9 +198,14 @@ body {
     .luxury{
         border-radius: 0 0 12px 12px;
     }
+
+    .atribuicao {
+        margin-bottom: 50px;
+    }
 }
 
 @media (max-width: 540px) {
+
     .cartao {
         width: 75%;
     }
